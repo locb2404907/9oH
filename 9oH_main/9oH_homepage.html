@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9oH - Header</title>
+    <link rel="stylesheet" href="./9oH_homepage.css">
+</head>
+<body>
+
+    <header class="main-header">
+        
+        <div href="" class="logo-container">
+            <img src="./img/logo_9oH.jpg" alt="Logo Trống Đồng" class="logo-img">
+            <span class="logo-text">Cuu Long History</span>
+        </div>
+
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <div class="action-btn">
+            <button class="login-btn">Đăng nhập</button>
+            <button class="menu-toggle-btn" onclick="toggleMenu()">☰</button>
+        </div>
+
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

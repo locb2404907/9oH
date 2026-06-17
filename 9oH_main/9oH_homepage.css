@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #fcfcfc;
+}
+
+/* --- Khu vực Header --- */
+.main-header {
+    background-color: #FFF9D0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 5%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* --- Logo & Tên Page --- */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #E5C05C;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: 800;
+    color: #333333;
+    letter-spacing: 1.5px;
+}
+
+/* --- Menu Chuyển Trang --- */
+.nav-links {
+    margin-left: auto;
+    margin-right: 35px;
+}
+.nav-links ul {
+    display: flex;
+    list-style-type: none;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #D49B25; /* Chuyển màu cam/vàng đậm khi di chuột qua */
+}
+
+/* --- Nút Đăng Nhập --- */
+.login-btn {
+    background-color: #D49B25;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #B5841D;
+    transform: translateY(-2px); /* Hiệu ứng nẩy nút nhẹ khi hover */
+    box-shadow: 0 4px 8px rgba(212, 155, 37, 0.4);
+}
+/* --- CSS MẶC ĐỊNH BỔ SUNG CHO NÚT MENU --- */
+.menu-toggle-btn {
+    display: none; /* Mặc định ẩn nút 3 gạch trên màn hình PC */
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #4A4A4A;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+}
+
+
+/* --- CẤU HÌNH CHO MÀN HÌNH ĐIỆN THOẠI (Dưới 768px) --- */
+@media screen and (max-width: 768px) {
+    .action-btn {
+        margin-left: auto; 
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu-toggle-btn {
+        display: block;
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: #4A4A4A;
+        cursor: pointer;
+        margin-left: 15px;
+        padding-right: 0;
+    }
+
+    /* Biến toàn bộ thanh menu ngang thành menu dọc ẩn giấu */
+    .nav-links {
+        display: none; /* Mặc định ẩn menu đi */
+        position: absolute;
+        top: 100%; /* Đẩy menu xuống ngay dưới thanh header */
+        left: 0;
+        width: 100%;
+        background-color: #FFF9D0; /* Cùng tông màu vàng nhạt chủ đạo */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+        margin: 0; /* Xóa margin-left: auto của PC */
+    }
+
+    /* Khi người dùng ấn nút Menu, class 'active' được thêm vào để hiện menu ra */
+    .nav-links.active {
+        display: block;
+    }
+
+    /* Xếp dọc các mục chuyển trang */
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Thu nhỏ bớt cỡ chữ và logo trên điện thoại cho cân đối */
+    .logo-text {
+        font-size: 24px;
+    }
+    
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .login-btn {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
