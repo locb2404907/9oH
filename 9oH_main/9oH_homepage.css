@@ -11,7 +11,7 @@ body {
 
 /* --- Khu vực Header --- */
 .main-header {
-    background-color: #FFF9D0;
+    background-color: #f2f0e1;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -20,6 +20,24 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+/*  --- Khu vực Banner ---*/
+.hero-banner {
+    /* Tạo chiều cao cho banner và màu nền vàng nhạt đồng bộ */
+    min-height: 80vh; 
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+                url('./img/banner.jpg') no-repeat center center;
+    
+    /* Tạo đường viền trang trí nhẹ ở dưới banner */
+    border-bottom: 3px solid #FFF9D0; 
+    background-size: cover;
+
+    /* Sử dụng Flexbox để căn giữa Slogan theo cả chiều dọc và ngang */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
 }
 
 /* --- Logo & Tên Page --- */
@@ -129,10 +147,10 @@ body {
         top: 100%; /* Đẩy menu xuống ngay dưới thanh header */
         left: 0;
         width: 100%;
-        background-color: #FFF9D0; /* Cùng tông màu vàng nhạt chủ đạo */
+        background-color: #FFF9D0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         padding: 20px 0;
-        margin: 0; /* Xóa margin-left: auto của PC */
+        margin: 0;
     }
 
     /* Khi người dùng ấn nút Menu, class 'active' được thêm vào để hiện menu ra */
@@ -160,5 +178,410 @@ body {
     .login-btn {
         padding: 8px 18px;
         font-size: 14px;
+    }
+}
+
+/* --- Khu vực Banner lớn (Hero Section) --- */
+
+
+/* Khối nội dung bên trong banner */
+.banner-content {
+    max-width: 800px;
+}
+
+/* Slogan chính (Tiêu đề lớn) */
+.slogan-title {
+    font-size: 70px;
+    font-weight: 800;
+    color: #333333;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    font-family: serif;
+}
+
+/* Slogan phụ (Dòng mô tả ngắn) */
+.slogan-sub {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+/* Nút kêu gọi hành động (Kêu gọi khám phá, mua hàng...) */
+.cta-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #D49B25; /* Đồng bộ màu với nút Đăng nhập */
+    color: #FFFFFF;
+    padding: 14px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 155, 37, 0.2);
+}
+
+.cta-btn:hover {
+    background-color: #B5841D;
+    transform: translateY(-3px); /* Hiệu ứng nẩy lên nhẹ khi di chuột */
+    box-shadow: 0 6px 20px rgba(212, 155, 37, 0.4);
+}
+
+
+/* --- TỐI ƯU TRÊN ĐIỆN THOẠI (Responsive) --- */
+@media screen and (max-width: 768px) {
+    .hero-banner {
+        min-height: 45vh; /* Giảm chiều cao trên điện thoại để đỡ chiếm diện tích màn hình */
+    }
+
+    .slogan-title {
+        font-size: 28px; /* Thu nhỏ chữ tiêu đề */
+        margin-bottom: 15px;
+    }
+
+    .slogan-sub {
+        font-size: 15px; /* Thu nhỏ chữ mô tả */
+        margin-bottom: 25px;
+    }
+
+    .cta-btn {
+        padding: 12px 28px;
+        font-size: 15px;
+    }
+}
+/* --- Khu vực Giới thiệu (About Section) --- */
+.about-section {
+    padding: 80px 5%;
+    background-color: #ffffff; /* Nền trắng để tách biệt với phần banner vàng nhạt ở trên */
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Khoảng cách giữa phần ảnh và phần chữ */
+}
+
+/* Cấu hình phần ảnh bên trái */
+.about-image-box {
+    flex: 1; /* Chiếm 50% độ rộng */
+    display: flex;
+    justify-content: center;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Ép ảnh thành hình vuông giống trong mẫu */
+    object-fit: cover;
+    border-radius: 24px; /* Bo tròn các góc mượt mà */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Đổ bóng sâu tạo cảm giác cao cấp */
+}
+
+/* Cấu hình phần nội dung bên phải */
+.about-content-box {
+    flex: 1; /* Chiếm 50% độ rộng còn lại */
+}
+
+/* Dòng chữ nhỏ phía trên tiêu đề */
+.about-badge {
+    display: inline-block;
+    color: #D49B25; /* Màu vàng đồng chủ đạo */
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.about-title {
+    font-size: 36px;
+    color: #222222;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.about-description {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* Danh sách đặc điểm nổi bật */
+.about-features-list {
+    list-style: none; /* Ẩn dấu chấm mặc định của ul */
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Khoảng cách giữa các dòng */
+}
+
+.about-features-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+/* Icon dấu tích màu vàng */
+.feature-icon {
+    background-color: #FFF9D0; /* Nền vàng nhạt giống màu header */
+    color: #D49B25; /* Dấu tích màu vàng đậm */
+    font-weight: bold;
+    font-size: 14px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%; /* Biến nền thành hình tròn */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Không cho icon bị bóp méo khi chữ dài */
+}
+
+.feature-text {
+    font-size: 16px;
+    color: #4A4A4A;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* --- TỐI ƯU TRÊN ĐIỆN THOẠI (Responsive) --- */
+@media screen and (max-width: 992px) {
+    .about-container {
+        flex-direction: column; /* Trên màn hình nhỏ thì xếp ảnh lên trên, chữ xuống dưới */
+        gap: 40px;
+    }
+
+    .about-image-box, .about-content-box {
+        width: 100%; /* Cho phép chiếm hết chiều ngang màn hình */
+    }
+
+    .about-img {
+        max-width: 400px; /* Thu nhỏ ảnh lại một chút trên mobile */
+    }
+
+    .about-title {
+        font-size: 28px; /* Giảm cỡ chữ tiêu đề */
+    }
+}
+
+
+/* --- Khu vực Timeline Lịch Sử --- */
+.timeline-section {
+    padding: 80px 5%;
+    background-color: #FFFDF0; /* Nền vàng kem rất nhạt để đổi màu so với phần giới thiệu trắng */
+}
+
+.timeline-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tiêu đề Timeline */
+.timeline-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.timeline-badge {
+    display: inline-block;
+    color: #D49B25;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.timeline-main-title {
+    font-size: 36px;
+    color: #222222;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.timeline-subtitle {
+    font-size: 16px;
+    color: #666666;
+}
+
+/* Khối bao quanh các cột mốc trên PC (Dàn hàng ngang) */
+.timeline-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+/* Đường trục nằm ngang chạy xuyên qua các vòng tròn */
+.timeline-line {
+    position: absolute;
+    top: 57px; /* Căn chỉnh nằm chính giữa vòng tròn số */
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #E5C05C; /* Đường line màu vàng đồng mờ */
+    z-index: 1;
+}
+
+/* Từng mốc thời gian */
+.timeline-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2; /* Nổi lên trên đường line */
+    text-align: center;
+}
+
+/* Vòng tròn số (Nút mốc) */
+.timeline-dot {
+    width: 38px;
+    height: 38px;
+    background-color: #D49B25; /* Màu vàng đậm chủ đạo */
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #FFFDF0; /* Tạo viền trùng màu nền để ngắt đường line */
+    box-shadow: 0 4px 10px rgba(212, 155, 37, 0.3);
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+}
+
+/* Hiệu ứng khi di chuột vào từng mốc */
+.timeline-item:hover .timeline-dot {
+    transform: scale(1.2);
+    background-color: #B5841D;
+}
+
+/* Nội dung chữ của mốc thời gian */
+.timeline-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+    border: 1px solid #FFF9D0;
+}
+
+.timeline-date {
+    display: block;
+    font-size: 13px;
+    color: #D49B25;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.timeline-title {
+    font-size: 18px;
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.timeline-desc {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* --- TỐI ƯU TRÊN ĐIỆN THOẠI (Chuyển thành trục dọc) --- */
+@media screen and (max-width: 768px) {
+    .timeline-wrapper {
+        flex-direction: column; /* Xếp dọc các item */
+        gap: 45px;
+        padding-top: 0;
+        padding-left: 30px; /* Nhường chỗ bên trái cho trục dọc */
+    }
+
+    /* Chuyển đường line từ ngang thành dọc nằm bên trái */
+    .timeline-line {
+        top: 0;
+        left: 17px; /* Căn thẳng với chấm tròn số */
+        width: 4px;
+        height: 100%;
+    }
+
+    .timeline-item {
+        flex-direction: row; /* Chấm tròn nằm bên trái, hộp chữ nằm bên phải */
+        align-items: flex-start;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .timeline-dot {
+        margin-bottom: 0;
+        flex-shrink: 0; /* Không cho vòng tròn bị móp méo */
+    }
+
+    .timeline-content {
+        width: 100%;
+    }
+}
+
+/* --- Khu vực Chân Trang (Footer) --- */
+.main-footer {
+    background-color: #FFF9D0; /* Cùng màu vàng nhạt chủ đạo giống Header */
+    padding: 25px 5%;
+    border-top: 1px solid #E5C05C; /* Đường viền mảnh màu vàng đồng để định vị rõ chân trang */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Phần chữ bên trái */
+.footer-left p {
+    font-size: 14px;
+    color: #555555;
+}
+
+.footer-brand {
+    font-weight: 700;
+    color: #333333;
+}
+
+/* Các liên kết bên phải */
+.footer-right {
+    display: flex;
+    gap: 25px; /* Khoảng cách giữa các liên kết */
+}
+
+.footer-right a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #555555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+    color: #D49B25; /* Đổi sang màu vàng đậm khi hover */
+}
+
+/* --- TỐI ƯU TRÊN ĐIỆN THOẠI (Responsive) --- */
+@media screen and (max-width: 600px) {
+    .footer-container {
+        flex-direction: column-reverse; /* Xếp dọc: Liên kết ở trên, bản quyền ở dưới cho cân đối */
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-right {
+        justify-content: center;
+        gap: 20px;
     }
 }
