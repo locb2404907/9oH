@@ -1,0 +1,478 @@
+/* --- Biến màu dùng chung --- */
+:root {
+    --gold: #D49B25;
+    --dark-gold: #B5841D;
+    --light-yellow: #FFF9D0;
+    --dark-gray: #333333;
+    --gray: #4A4A4A;
+    --light-gray: #666666;
+}
+
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif ,sans-serif;
+}
+
+body {
+    background-color: #fcfcfc;
+}
+
+/* --- Header --- */
+.main-header {
+    background-color: #f2f0e1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 5%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--gold);
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--dark-gray);
+    letter-spacing: 1.5px;
+}
+
+.nav-links {
+    margin-left: auto;
+    margin-right: 35px;
+}
+.nav-links ul {
+    display: flex;
+    list-style-type: none;
+    gap: 35px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover { color: var(--gold); }
+
+
+/* Giỏ hàng */
+.cart-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    width: 40px; 
+    height: 40px;
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    background-color: #fff;
+}
+.cart-icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.cart-icon:hover { transform: scale(1.15); }
+
+/* Nút đăng nhập */
+.login-btn {
+    background-color: var(--gold);
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.login-btn:hover {
+    background-color: var(--dark-gold);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(212, 155, 37, 0.4);
+}
+
+/* Nút menu toggle */
+.menu-toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: var(--gray);
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.action-btn { display: flex; align-items: center; }
+
+/* --- Banner --- */
+.hero-banner {
+    min-height: 85vh; 
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), 
+                url('./img/banner3.jpg') no-repeat center center;
+    border-bottom: 3px solid var(--light-yellow); 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.banner-content { max-width: 1000px; }
+
+.slogan-title {
+    font-size: 80px;
+    font-weight: 1000;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    font-family: serif;
+}
+.slogan-sub {
+    font-size: 28px;
+    color: var(--light-gray);
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+.cta-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--gold);
+    color: #fff;
+    padding: 14px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 155, 37, 0.2);
+}
+.cta-btn:hover {
+    background-color: var(--dark-gold);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(212, 155, 37, 0.4);
+}
+
+/* --- About Section --- */
+.about-section { padding: 80px 5%; background-color: #fff; }
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.about-image-box { flex: 1; display: flex; justify-content: center; }
+.about-img {
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.about-content-box { flex: 1; }
+.about-badge {
+    display: inline-block;
+    color: var(--gold);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+.about-title {
+    font-size: 36px;
+    color: #222;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+.about-description {
+    font-size: 16px;
+    color: var(--light-gray);
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.about-features-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.about-features-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.feature-icon {
+    background-color: var(--light-yellow);
+    color: var(--gold);
+    font-weight: bold;
+    font-size: 14px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.feature-text {
+    font-size: 16px;
+    color: var(--gray);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* --- Timeline --- */
+.timeline-section { padding: 80px 5%; background-color: #FFFDF0; }
+.timeline-container { max-width: 1200px; margin: 0 auto; }
+.timeline-header { text-align: center; margin-bottom: 60px; }
+.timeline-badge {
+    display: inline-block;
+    color: var(--gold);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+.timeline-main-title {
+    font-size: 36px;
+    color: #222;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.timeline-subtitle { font-size: 16px; color: var(--light-gray); }
+.timeline-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 40px;
+}
+.timeline-line {
+    position: absolute;
+    top: 57px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #E5C05C;
+    z-index: 1;
+}
+.timeline-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.timeline-dot {
+    width: 38px;
+    height: 38px;
+    background-color: var(--gold);
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #FFFDF0;
+    box-shadow: 0 4px 10px rgba(212, 155, 37, 0.3);
+}
+/* --- Footer --- */
+.main-footer {
+    background-color: var(--light-yellow);
+    padding: 25px 5%;
+    border-top: 1px solid #E5C05C;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left p {
+    font-size: 14px;
+    color: #555;
+}
+
+.footer-brand {
+    font-weight: 700;
+    color: var(--dark-gray);
+}
+
+.footer-right {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-right a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.footer-right a:hover { color: var(--gold); }
+
+
+
+/* --- TỐI ƯU CẤU HÌNH CHO MÀN HÌNH ĐIỆN THOẠI (Dưới 768px) --- */
+@media screen and (max-width: 768px) {
+    /* 1. XỬ LÝ HEADER & ACTION BUTTONS */
+    /* Ẩn Giỏ hàng và Nút Đăng nhập trên mobile */
+    .login-btn {
+        display: none !important;
+    }
+
+    /* Đảm bảo nút Menu luôn hiển thị */
+    .menu-toggle-btn {
+        display: block !important;
+    }
+
+    .action-btn {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+
+
+    /* Menu dọc ẩn/hiện */
+    .nav-links {
+        display: none; 
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: #FFF9D0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+        margin: 0;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Thu nhỏ logo và chữ trên điện thoại */
+    .logo-text { font-size: 20px; }
+    .logo-img { width: 35px; height: 35px; }
+    
+    /* 2. BANNER (Hero) */
+    .hero-banner {
+        min-height: 45vh; 
+    }
+    .slogan-title { font-size: 28px; margin-bottom: 15px; }
+    .slogan-sub { font-size: 15px; margin-bottom: 25px; }
+    .cta-btn { padding: 10px 24px; font-size: 14px; }
+
+    /* 3. SECTION GIỚI THIỆU (About) */
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .about-title { font-size: 26px; }
+
+    /* 4. TIMELINE */
+    .timeline-wrapper {
+        flex-direction: column;
+        gap: 45px;
+        padding-top: 0;
+        padding-left: 30px;
+    }
+    .timeline-line {
+        top: 0;
+        left: 17px;
+        width: 4px;
+        height: 100%;
+    }
+    .timeline-item {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        gap: 20px;
+    }
+    .timeline-dot { margin-bottom: 0; flex-shrink: 0; }
+
+    
+}
+
+/* --- CẤU HÌNH TỐI ƯU THÊM CHO MÀN HÌNH RẤT NHỎ (Dưới 360px) --- */
+@media screen and (max-width: 360px) {
+    /* 1. Thu gọn thanh Header để có thêm khoảng trống */
+    .main-header {
+        padding: 10px 3%; /* Giảm bớt khoảng cách 2 bên mép màn hình */
+    }
+    .logo-text {
+        font-size: 18px;
+    }
+    .logo-img {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* 2. Thu nhỏ chữ nội dung & nút bấm ở phần Banner */
+    .slogan-title {
+        font-size: 24px;
+    }
+    .slogan-sub {
+        font-size: 14px; /* Giảm cỡ chữ mô tả */
+    }
+    .cta-btn {
+        padding: 10px 20px; /* Thu nhỏ nút Khám Phá Ngay */
+        font-size: 14px;
+    }
+
+    /* 3. Gom gọn các tiêu đề lớn của phần Giới thiệu & Timeline */
+    .about-title, 
+    .timeline-main-title {
+        font-size: 22px; /* Giúp tiêu đề không bẻ chữ xuống dòng quá nhiều */
+    }
+
+    /* 4. Ép lại nút Đăng nhập trong menu 3 gạch vừa vặn hơn */
+    .mobile-login {
+        padding: 0 10px;
+    }
+    .mobile-login a {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+}
