@@ -18,7 +18,7 @@ body {
     padding: 24px 0 0 20px;
     background: linear-gradient(to right, #f7f1e3 40%, transparent 70%),
                 linear-gradient(to top, #f7f1e3 10%, transparent 25%),
-                url('image/avata1.jpg') no-repeat right center / cover;
+                url('img/avata1.jpg') no-repeat right center / cover;
 }
 .hero h1, .hero p { word-break: break-word; }
 .hero h1 { font-size: 17px; margin-bottom: 8px; width: 60%; }
@@ -288,7 +288,7 @@ body {
         padding: 80px calc((100% - 1100px) / 2 + 50px) 0;
         background: linear-gradient(to right, #f7f1e3 45%, transparent 75%),
                     linear-gradient(to top, #f7f1e3 5%, transparent 20%),
-                    url('image/avata1.jpg') no-repeat right center / cover;
+                    url('img/avata1.jpg') no-repeat right center / cover;
     }
     .hero h1 { font-size: 38px; width: 55%; }
     .hero p { font-size: 16px; width: 45%; line-height: 1.6; }
