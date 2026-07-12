@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+    <body>
+    <header class="main-header">
+        
+        <div class="logo-container">
+            <img src="../pictures/logo_9oH.jpg" alt="Logo Trống Đồng" class="logo-img">
+            <span class="logo-text">Cuu Long History</span>
+        </div>
+
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="index.html">Sản phẩm</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <div class="action-btn">
+        <a href="../cart/cart.html" class="cart-icon">
+            <img src="../pictures/GioHang.jpg" alt="Giỏ hàng">
+    </a>
+
+            <button class="login-btn" onclick="window.location.href='locdangnhap.html'">Đăng nhập/ Đăng kí</button>
+            <button class="menu-toggle-btn" onclick="toggleMenu()">☰</button>
+    </div>
+
+    </header>
+
+    <section class="products">
+       
+        <div class="products_item">
+            <img src="../pictures/aolaco.jfif" alt="Ao_thun">
+            <div class="products_infor">
+                <h3>T-Shirt</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque pariatur a aspernatur ipsa facere molestiae? Ipsum accusantium iste est quasi laborum, nemo ex voluptatum aspernatur, fugiat ducimus dolorem earum quaerat.</p>
+                <div class="price-and-add">
+                    <p class="price">Price: 120.000 vnd</p>
+                    <a href="#" class="add" data-id="abc"><i class="material-icons">add_shopping_cart</i></a>
+                </div>
+                
+                <a href="../detail/detail.html" class="btn">View</a>
+            </div>
+        </div>
+        
+       
+
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

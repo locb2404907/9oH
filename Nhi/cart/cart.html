@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="../page/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+   <header class="main-header">
+        
+        <div class="logo-container">
+            <img src="../pictures/logo_9oH.jpg" alt="Logo Trống Đồng" class="logo-img">
+            <span class="logo-text">Cuu Long History</span>
+        </div>
+
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="../page/index.html">Sản phẩm</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <div class="action-btn">
+        <a href="../cart/cart.html" class="cart-icon">
+            <img src="../pictures/GioHang.jpg" alt="Giỏ hàng">
+    </a>
+
+            <button class="login-btn" onclick="window.location.href='locdangnhap.html'">Đăng nhập/ Đăng kí</button>
+            <button class="menu-toggle-btn" onclick="toggleMenu()">☰</button>
+    </div>
+
+    </header>
+
+
+    <main>
+        <div class="container">
+            <div class="cart-container">
+                <div class="cart-part">
+                    <div class="cart-image">
+                        <img src="../pictures/aolaco.jfif" alt="Ao">
+                    </div>
+                    <div class="description">Vietnamese Flag T-shirt</div>
+                    <div class="cart-quantity">
+                        <input type="number" id="quantity" min="1">
+                    </div>
+                    <div class="cart-price">
+                        <h4>$60</h4>
+                    </div>
+                    <div class="cart-total">
+                        <h4>$60</h4>
+                    </div>
+                    <div class="cart-remove">
+                        <button>Remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-sumary">
+            <div class="product-total">
+                <h2>Product total: <span id="total">$60</span></h2>
+            </div>
+            <div class="product-checkout">
+                <a href="../checkout/checkout.html" class="checkout">Checkout</a>
+            </div>
+            <div >
+                <button class="removeAll" >Clear cart</button>
+            </div>
+        </div>
+    </main>
+    <div class="cart-empty">
+        <h2>Cart is empty</h2>
+        <button class="back-btn">Back to home</button>
+    </div>
+    <script src="cart.js" ></script>
+</body>
+</html>

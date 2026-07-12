@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "title": "Nón lá",
+        "information":"Nón lá là một trong những biểu tượng văn hóa truyền thống đặc trưng của Việt Nam. Sản phẩm được làm thủ công từ lá cọ hoặc lá nón kết hợp với khung tre chắc chắn, mang lại độ bền cao và trọng lượng nhẹ. Với thiết kế hình chóp cùng vành rộng, nón lá giúp che nắng, che mưa hiệu quả, tạo cảm giác thoải mái khi sử dụng. Không chỉ là vật dụng quen thuộc trong đời sống hằng ngày, nón lá còn được xem là phụ kiện thời trang mang đậm nét đẹp truyền thống, thường xuất hiện trong các lễ hội, chương trình biểu diễn nghệ thuật và là món quà lưu niệm ý nghĩa dành cho du khách trong và ngoài nước.",
+        "description":"Nón lá là một trong những biểu tượng văn hóa truyền thống đặc sắc và lâu đời nhất của Việt Nam. Bắt nguồn từ thế kỷ XIII thời nhà Trần, vật dụng này được làm từ các loại lá tự nhiên (như lá cọ, lá dừa) đan trên khung tre, ban đầu dùng để che nắng, che mưa.",
+        "price": 80000,
+        "img":"../pictures/non_la.jfif"
+    },
+    {
+        "id":2,
+        "title": "Áo thun",
+        "information":"Áo thun hình quốc kỳ Việt Nam là sản phẩm thời trang mang phong cách trẻ trung, nổi bật với hình in lá cờ đỏ sao vàng ở mặt trước. Áo được may từ chất liệu cotton cao cấp, mềm mại, thoáng khí và thấm hút mồ hôi tốt, mang lại cảm giác thoải mái khi mặc. Thiết kế đơn giản nhưng ý nghĩa, phù hợp để mặc trong các dịp lễ lớn của đất nước, cổ vũ các sự kiện thể thao, tham gia hoạt động tập thể hoặc sử dụng hằng ngày. Sản phẩm có nhiều kích cỡ, dễ dàng phối cùng quần jean, quần kaki hoặc quần short, thể hiện tinh thần yêu nước và niềm tự hào dân tộc.",
+        "description":"Áo thun Quốc kỳ Việt Nam được thiết kế với phong cách đơn giản nhưng đầy ý nghĩa, nổi bật với hình ảnh lá cờ đỏ sao vàng tượng trưng cho niềm tự hào dân tộc.",
+        "price":100000,
+        "img":"../pictures/aolaco.jfif"
+    },
+    {
+        "id":3,
+        "title": "Gốm Bát Tràng",
+        "information":"Gốm Bát Tràng là dòng sản phẩm thủ công mỹ nghệ nổi tiếng của Việt Nam, được chế tác từ đất sét cao cấp và nung ở nhiệt độ cao, tạo nên độ bền chắc cùng lớp men sáng bóng, tinh xảo. Với nhiều mẫu mã đa dạng như chén, bát, đĩa, bình hoa, ấm trà và đồ trang trí, sản phẩm vừa đáp ứng nhu cầu sử dụng hằng ngày vừa mang giá trị thẩm mỹ cao. Mỗi sản phẩm đều được chế tác tỉ mỉ bởi các nghệ nhân làng nghề, thể hiện nét đẹp truyền thống và tinh hoa gốm sứ Việt Nam. Gốm Bát Tràng là lựa chọn lý tưởng để trang trí không gian sống hoặc làm quà tặng ý nghĩa cho người thân, bạn bè và đối tác.",
+        "description":"Gốm Bát Tràng là sản phẩm thủ công truyền thống nổi tiếng của Việt Nam, được chế tác bởi những nghệ nhân làng nghề với kỹ thuật tinh xảo và bề dày lịch sử. Mỗi sản phẩm đều mang vẻ đẹp mộc mạc, sang trọng cùng độ bền cao, phù hợp để trang trí không gian sống hoặc làm quà tặng ý nghĩa. ",
+        "price":200000,
+        "img":"../pictures/GomBatTrang.jfif"
+    }
+]
