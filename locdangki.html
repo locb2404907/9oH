@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lochome.css">
     <link rel="stylesheet" href="./locdkdn.css">
-    <link rel="stylesheet" href="./lochome.css" class="css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <title>Đăng kí</title>
 </head>
 <body>
+
         <header class="main-header">
-        
-        <div href="#" class="logo-container">
+        <div href="index.html" class="logo-container">
             <img src="./img/logo_9oH.jpg" alt="Logo Trống Đồng" class="logo-img">
             <span class="logo-text">Cuu Long History</span>
         </div>
@@ -19,10 +19,11 @@
         <nav class="nav-links">
             <ul>
                 <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="binhindex.html">Nội dung</a></li>
                 <li><a href="#">Dịch vụ</a></li>
-                <li><a href="#">Tin tức</a></li>
-                <li><a href="#">Liên hệ</a></li>
+                <li><a href="linhindex.html">Tin tức</a></li>
+                <li><a href="khoaindex.html">Liên hệ</a></li>
+                <li class="mobile-login"><a href="locdangnhap.html">Đăng nhập / Đăng kí</a></li>
             </ul>
         </nav>
 
@@ -43,7 +44,6 @@
             navLinks.classList.toggle('active');
         }
     </script>
-
 
     <div id="wrapper">
         <form action="" id="form-login" onsubmit="handleRegister(event)">
@@ -69,6 +69,22 @@
             <input type="submit" value="Đăng kí!!" class="form-submit">
         </form>
     </div>
+<footer class="main-footer">
+    <div class="footer-container">
+        
+        <div class="footer-left">
+            <p>&copy; 2026 <span class="footer-brand">9oH</span>. Tất cả các quyền được bảo lưu.</p>
+        </div>
+
+        <div class="footer-right">
+            <a href="#">Điều khoản sử dụng</a>
+            <a href="#">Chính sách bảo mật</a>
+            <a href="#">Trợ giúp</a>
+        </div>
+
+    </div>
+</footer>
+
         <script src="locdangki.js"></script>
 </body>
 </html>
