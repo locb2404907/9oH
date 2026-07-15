@@ -25,7 +25,7 @@ const renderCartItems = async() =>{
                         <h4>${search.price * itemCart.count}</h4>
                     </div>
                     <div onclick = "removeItem(${search.id})" class="cart-remove">
-                        <button>Remove</button>
+                        <button>Loại bỏ</button>
                     </div>
                 </div>
             `;
@@ -35,8 +35,8 @@ const renderCartItems = async() =>{
     else{
         return container.innerHTML = 
         `<div class="cart-empty">
-        <h2>Cart is empty</h2>
-        <a href="../page/index.html"><button class="back-btn">Back to home</button></a>
+        <h2>Giỏ hàng của bạn đang trống.</h2>
+        <a href="../page/index.html"><button class="back-btn">Trở về trang chủ</button></a>
         </div>
         `;
     }
@@ -67,13 +67,13 @@ let totalProduct = async () =>{
         }).reduce((x,y) => x+y, 0);
         cartSumary.innerHTML = `
         <div class="product-total">
-                <h2>Product total: <span id="total">${Total}</span></h2>
+                <h2>Tổng tiền hàng: <span id="total">${Total}</span></h2>
             </div>
             <div class="product-checkout">
-                <a href="../checkout/checkout.html" class="checkout">Checkout</a>
+                <a href="../checkout/checkout.html" class="checkout">Đặt hàng</a>
             </div>
             <div >
-                <button onclick="clearCart()" class="removeAll" >Clear cart</button>
+                <button onclick="clearCart()" class="removeAll" >Xoá giỏ hàng</button>
             </div>`
     }
     else{

@@ -12,11 +12,11 @@ const getData = async() =>{
                 <h3>${item.title}</h3>
                 <p>${item.description}</p>
                 <div class="price-and-add">
-                    <p class="price">Price:${item.price}</p>
+                    <p class="price">Giá:${item.pricedes}</p>
                     <a href="" class="add" data-id="${item.id}"><i class="material-icons">add_shopping_cart</i></a>
                 </div>
                 
-                <a href="../detail/detail.html?id=${item.id}" class="btn">View</a>
+                <a href="../detail/detail.html?id=${item.id}" class="btn">Xem thêm</a>
             </div>
         </div>
             `
@@ -57,6 +57,7 @@ const getData = async() =>{
             }
 
             localStorage.setItem("cart", JSON.stringify(cart));
+            alert("bạn vừa thêm sản phẩm vào giỏ hàng !")
 
             console.log(cart);
         });

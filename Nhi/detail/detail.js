@@ -18,8 +18,8 @@ const getDetailProduct = async() =>{
                     <h2>${findProductId.title}</h2>
                     <p>${findProductId.information}</p>
                     <div class="detail-price">
-                        Price: 
-                        <span class="Price">${findProductId.price}</span>
+                        Giá: 
+                        <span class="Price">${findProductId.pricedes}</span>
                     </div>
                     
                 </div>
@@ -46,6 +46,7 @@ btnAddCart.addEventListener('click', ()=>{
         }]
         localStorage.setItem('cart',JSON.stringify(cart))
     }
+    alert("bạn vừa thêm sản phẩm vào giỏ hàng !")
     console.log(findProductId)
 })
 
